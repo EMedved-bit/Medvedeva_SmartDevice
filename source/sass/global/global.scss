@@ -16,3 +16,17 @@
 *::before {
   box-sizing: border-box;
 }
+
+.button {
+  height: 45px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05;
+  text-transform: uppercase;
+  color: $white;
+}

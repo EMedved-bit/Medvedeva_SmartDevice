@@ -1,0 +1,17 @@
+.page {
+  height: 100%;
+  background-color: $grey;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  font-family: "PT Mono", "Courier", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $grey;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}

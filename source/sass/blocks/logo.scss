@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    .logo__text-title,
+    .logo__text-subtitle {
+      color: $blue;
+    }
+  }
+}
+
+.logo__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__text-title {
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: $white;
+}
+
+.logo__text-subtitle {
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: $blue-grey;
+}
