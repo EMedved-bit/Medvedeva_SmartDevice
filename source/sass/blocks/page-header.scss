@@ -24,6 +24,12 @@
 
 .page-header__logo {
   margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    .logo__text-wrapper {
+      display: none;
+    }
+  }
 }
 
 .page-header__contacts-list {

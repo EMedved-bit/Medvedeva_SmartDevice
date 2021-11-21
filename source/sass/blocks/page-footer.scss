@@ -1,0 +1,125 @@
+.page-footer {
+  background-color: $light-grey;
+  padding: 65px 0 14px;
+  margin-top: auto;
+
+  @media (max-width: $desktop-width) {
+    padding: 19px 0 24px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 46px 0 26px;
+  }
+}
+
+.page-footer__wrapper {
+  padding: 0 25px 60px;
+  max-width: 1460px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 33px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.page-footer__logo-and-social {
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 26px;
+    border-bottom: 1px solid rgba($border-grey, 0.2);
+    align-items: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    padding: 0 15px 54px;
+  }
+}
+
+.page-footer__logo {
+  margin-bottom: 53px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.page-footer__section-title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: $dark-grey;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    height: 73px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-footer__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba($dark-grey, 0.5);
+}
+
+
+.page-footer__copyright {
+  font-size: 13px;
+  line-height: 24px;
+  color: rgba($dark-grey, 0.5);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.page-footer__contacts {
+  p {
+    margin: 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 38px 25px 0 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 15px;
+    border-top: 1px solid rgba($border-grey, 0.2);
+    width: 100%;
+  }
+}
+
+.page-footer__text-wrapper {
+  @media (max-width: $tablet-width) {
+    padding-bottom: 23px;
+  }
+}

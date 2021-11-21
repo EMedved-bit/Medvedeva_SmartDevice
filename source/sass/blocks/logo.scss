@@ -17,10 +17,6 @@
   display: flex;
   flex-direction: column;
   margin-left: 16px;
-
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
 }
 
 .logo__text-title {
@@ -29,6 +25,10 @@
   font-size: 25px;
   line-height: 29px;
   color: $white;
+
+  &--dark {
+    color: $dark;
+  }
 }
 
 .logo__text-subtitle {
