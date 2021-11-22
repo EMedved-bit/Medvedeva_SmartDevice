@@ -1,5 +1,9 @@
 .page-header {
   padding-top: 33px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   @media (max-width: $desktop-width) {
     padding-top: 20px;
