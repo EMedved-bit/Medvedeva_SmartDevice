@@ -1,0 +1,143 @@
+.benefits {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &::before {
+    width: 224px;
+    height: 259px;
+    background-image: url("../images/polygon_decor_benefits.svg");
+    bottom: 22px;
+    right: 48px;
+  }
+
+  &::after {
+    width: 298px;
+    height: 552px;
+    background-image: url("../images/polygonbig_decor_benefits.svg");
+    bottom: -465px;
+    left: 13px;
+  }
+}
+
+.benefits__wrapper {
+  padding: 109px 25px 0;
+  max-width: 1220px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../images/polygon_benefits_wrapper.svg");
+    background-repeat: no-repeat;
+    width: 478px;
+    height: 552px;
+    position: absolute;
+    bottom: -107px;
+    left: 509px;
+    z-index: 0;
+
+    @media (max-width: $desktop-width) {
+      bottom: -174px;
+      left: 492px;
+    }
+
+    @media (max-width: $tablet-width) {
+      left: 161px;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-top: 54px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 37px 15px 0;
+  }
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  position: relative;
+  z-index: 5;
+
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.benefits__item {
+  padding: 40px 42px 40px 44px;
+  min-height: 299px;
+  border: 1px solid $border-lightgrey;
+  border-left: 3px solid $blue;
+  background-color: $white;
+
+  &:hover {
+    background-color: $blue;
+    cursor: pointer;
+
+    svg {
+      fill: $white;
+    }
+
+    .benefits__title {
+      color: $white;
+    }
+
+    .benefits__description {
+      color: $white;
+    }
+  }
+
+  svg {
+    fill: $blue;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 24px 19px 20px 27px;
+    min-height: 232px;
+    border-left: 2px solid $blue;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-right: 11px;
+  }
+}
+
+.benefits__title {
+  margin: 23px 0 15px;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $blue;
+
+  @media (max-width: $desktop-width) {
+    margin: 14px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+}
