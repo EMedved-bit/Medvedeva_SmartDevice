@@ -29,4 +29,27 @@
   letter-spacing: 0.05;
   text-transform: uppercase;
   color: $white;
+
+  &--blue-text {
+    border: 1px solid $blue;
+    color: $blue;
+  }
+}
+
+.section-title {
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+
+  @media (max-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
