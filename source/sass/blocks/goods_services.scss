@@ -1,0 +1,121 @@
+.goods_services {
+  background-color: $dark-grey;
+}
+
+.goods_services__wrapper {
+  padding: 93px 25px 127px;
+  max-width: 1220px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+
+  @media (max-width: $desktop-width) {
+    padding: 53px 25px 78px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 53px 15px 64px;
+  }
+}
+
+.goods_services__title {
+  margin: 0 0 47px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 37px 10px;
+  }
+}
+
+.goods_services__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.goods_services__item {
+  width: calc((100% - 60px) / 3);
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    background-color: $blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid $white;
+    border-bottom: 1px solid $white;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 27px;
+    bottom: 27px;
+    z-index: 2;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 46px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    .goods_services__image {
+      opacity: 0.5;
+    }
+  }
+}
+
+.goods-services__picture {
+  display: flex;
+}
+
+.goods_services__image {
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
+
+.goods_services__name {
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $white;
+  position: absolute;
+  top: 53px;
+  left: 44px;
+  right: 30px;
+
+  @media (max-width: $tablet-width) {
+    top: 23px;
+    left: 35px;
+    right: 35px;
+  }
+}

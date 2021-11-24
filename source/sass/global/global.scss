@@ -43,6 +43,10 @@
   line-height: 51px;
   margin: 0;
 
+  &--white {
+    color: $white;
+  }
+
   @media (max-width: $desktop-width) {
     font-size: 32px;
     line-height: 45px;
