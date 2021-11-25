@@ -37,7 +37,7 @@
         <div class="title-screen__wrapper">
           <h1 class="title-screen__title">Печатные платы</h1>
           <p class="title-screen__intro">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="title-screen__form-link" href="#">
+          <a class="title-screen__form-link" href="#form">
             <span class="title-screen__form-link-text">Получить бесплатную консультацию</span>
             <span class="title-screen__form-link-text-mobile">Бесплатная консультация</span>
           </a>
@@ -166,6 +166,28 @@
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="form" id="form">
+        <div class="form__wrapper">
+          <div class="form__container">
+            <h2 class="section-title section-title--white form__title">Остались вопросы? Задайте их нам!</h2>
+            <p class="form__intro">Мы проконсультируем Вас бесплатно</p>
+            <form action="/" method="GET">
+              <label>
+                <input type="text" name="user_name" id="name" placeholder="Имя" required>
+              </label>
+              <label>
+                <input type="tel" name="user-phone" id="phone" placeholder="Телефон" required>
+              </label>
+              <textarea name="question" id="user-question" rows="6" placeholder="Ваш вопрос" required></textarea>
+              <button type="submit" class="button">Задать вопрос</button>
+              <div class="form__checkbox-wrapper">
+                <input class="visually-hidden" type="checkbox" name="personal-data" id="personal-data" required checked>
+                <label for="personal-data">Я согласен на обработку  персональных данных</label>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
