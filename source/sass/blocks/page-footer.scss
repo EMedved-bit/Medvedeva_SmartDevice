@@ -123,3 +123,49 @@
     padding-bottom: 23px;
   }
 }
+
+.js-tab-button {
+  @media (max-width: $tablet-width) {
+    position: relative;
+
+    &::before,
+    &::after {
+      background-color: $light;
+      position: absolute;
+    }
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 1px;
+      top: 38px;
+      right: 23px;
+    }
+
+    &::after {
+      width: 1px;
+      height: 16px;
+      top: 30px;
+      right: 30px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      &::before,
+      &::after {
+        background-color: $grey;
+      }
+    }
+  }
+}
+
+.js-tab-closed {
+  .js-tab-content {
+    display: none;
+  }
+
+  .js-tab-button::after {
+    content: "";
+  }
+}

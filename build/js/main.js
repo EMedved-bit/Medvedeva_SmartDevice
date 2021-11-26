@@ -14,6 +14,9 @@ const userName = form.querySelector('#name');
 const userPhone = form.querySelector('#phone');
 const userMessage = form.querySelector('#user-question');
 
+const tabs = document.querySelectorAll('.js-tab');
+const tabsButtons = document.querySelectorAll('.js-tab-button');
+
 iMask(userPhonePopup, {
   mask: '+{7}(000)000-00-00'
 });
@@ -86,3 +89,22 @@ form.addEventListener('submit', function () {
     localStorage.setItem('userMessage', userMessage.value);
   }
 });
+
+if (window.screen.width <= 767) {
+  tabs.forEach(function (tab) {
+    tab.classList.add('js-tab-closed');
+  });
+
+  tabsButtons.forEach(function (button, index) {
+    button.addEventListener('click', function () {
+      if (tabs[index].classList.contains('js-tab-closed')) {
+        tabs.forEach(function (tab) {
+          tab.classList.add('js-tab-closed');
+        });
+        tabs[index].classList.remove('js-tab-closed');
+      } else {
+        tabs[index].classList.add('js-tab-closed');
+      }
+    });
+  });
+}
