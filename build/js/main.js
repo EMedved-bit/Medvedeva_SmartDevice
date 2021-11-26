@@ -90,7 +90,7 @@ form.addEventListener('submit', function () {
   }
 });
 
-if (window.screen.width <= 767) {
+if (window.innerWidth <= 767) {
   tabs.forEach(function (tab) {
     tab.classList.add('js-tab-closed');
   });

@@ -14,7 +14,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="logo page-header__logo" href="/">
+        <a class="logo page-header__logo" href="#">
           <img class="logo__icon" src="images/logo.svg" width="52" height="52" alt="Логотип с изображением мозга">
           <div class="logo__text-wrapper">
             <span class="logo__text-title">Smart Device</span>
@@ -42,8 +42,8 @@
             <span class="title-screen__form-link-text-mobile">Бесплатная консультация</span>
           </a>
           <picture>
-            <source media="(max-width: 767px)" srcset="images/title_image_mobile.png" width="294" height="437">
-            <source media="(max-width: 1023px)" srcset="images/title_image_tablet.png" width="330" height="466">
+            <source media="(max-width: 767px)" srcset="images/title_image_mobile.png">
+            <source media="(max-width: 1023px)" srcset="images/title_image_tablet.png">
             <img class="title-screen__image" src="images/title_image.png" width="713" height="655" alt="Стопка синих печатных плат">
           </picture>
         </div>
@@ -100,16 +100,16 @@
           <p class="company-description__text">
             Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
           </p>
-          <a class="button button--blue-text company-description__link" href="/">Подробнее</a>
+          <a class="button button--blue-text company-description__link" href="#">Подробнее</a>
         </div>
         <img class="company-description__image" src="../images/2005.png" width="220" height="320" alt="2005">
       </section>
-      <section class="goods_services">
-        <div class="goods_services__wrapper">
-          <h2 class="section-title section-title--white goods_services__title">Service Device предлагает следующие товары и услуги</h2>
-          <ul class="goods_services__list">
-            <li class="goods_services__item">
-              <a class="goods_services__link">
+      <section class="goods-services">
+        <div class="goods-services__wrapper">
+          <h2 class="section-title section-title--white goods-services__title">Service Device предлагает следующие товары и услуги</h2>
+          <ul class="goods-services__list">
+            <li class="goods-services__item">
+              <a class="goods-services__link">
                 <picture class="goods-services__picture">
                   <!-- 1x: 290x256px; 2x: 580x512px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="images/gallery/goods_1mobile@1x.webp 1x, images/gallery/goods_1mobile@2x.webp 2x">
@@ -122,13 +122,13 @@
                   <!-- 1x: 720x256px; 2x: 1430x512px -->
                   <source media="(max-width: 1023px)" srcset="images/gallery/goods_1tablet@1x.jpg 1x, images/gallery/goods_1tablet@2x.jpg 2x">
                   <!-- 1x: 370x620px; 2x: 740x1240px -->
-                  <img class="goods_services__image" src="images/gallery/goods_1@1x.jpg" width="370" height="620" srcset="images/gallery/goods_1@2x.jpg 2x" alt="Изображение печатной платы">
+                  <img class="goods-services__image" src="images/gallery/goods_1@1x.jpg" width="370" height="620" srcset="images/gallery/goods_1@2x.jpg 2x" alt="Изображение печатной платы">
                 </picture>
-                <span class="goods_services__name">Производство<br> печатных плат</span>
+                <span class="goods-services__name">Производство<br> печатных плат</span>
               </a>
             </li>
-            <li class="goods_services__item">
-              <a class="goods_services__link">
+            <li class="goods-services__item">
+              <a class="goods-services__link">
                 <picture class="goods-services__picture">
                   <!-- 1x: 290x256px; 2x: 580x512px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="images/gallery/goods_2mobile@1x.webp 1x, images/gallery/goods_2mobile@2x.webp 2x">
@@ -141,13 +141,13 @@
                   <!-- 1x: 720x256px; 2x: 1430x512px -->
                   <source media="(max-width: 1023px)" srcset="images/gallery/goods_2tablet@1x.jpg 1x, images/gallery/goods_2tablet@2x.jpg 2x">
                   <!-- 1x: 370x620px; 2x: 740x1240px -->
-                  <img class="goods_services__image" src="images/gallery/goods_2@1x.jpg" width="370" height="620" srcset="images/gallery/goods_2@2x.jpg 2x" alt="Изображение печатной платы">
+                  <img class="goods-services__image" src="images/gallery/goods_2@1x.jpg" width="370" height="620" srcset="images/gallery/goods_2@2x.jpg 2x" alt="Изображение печатной платы">
                 </picture>
-                <span class="goods_services__name">Монтаж<br> печатных плат</span>
+                <span class="goods-services__name">Монтаж<br> печатных плат</span>
               </a>
             </li>
-            <li class="goods_services__item">
-              <a class="goods_services__link">
+            <li class="goods-services__item">
+              <a class="goods-services__link">
                 <picture class="goods-services__picture">
                   <!-- 1x: 290x256px; 2x: 580x512px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="images/gallery/goods_3mobile@1x.webp 1x, images/gallery/goods_3mobile@2x.webp 2x">
@@ -160,9 +160,9 @@
                   <!-- 1x: 720x256px; 2x: 1430x512px -->
                   <source media="(max-width: 1023px)" srcset="images/gallery/goods_3tablet@1x.jpg 1x, images/gallery/goods_3tablet@2x.jpg 2x">
                   <!-- 1x: 370x620px; 2x: 740x1240px -->
-                  <img class="goods_services__image" src="images/gallery/goods_3@1x.jpg" width="370" height="620" srcset="images/gallery/goods_3@2x.jpg 2x" alt="Изображение светодиодной ленты">
+                  <img class="goods-services__image" src="images/gallery/goods_3@1x.jpg" width="370" height="620" srcset="images/gallery/goods_3@2x.jpg 2x" alt="Изображение светодиодной ленты">
                 </picture>
-                <span class="goods_services__name">Комлектующие<br> для светотехники</span>
+                <span class="goods-services__name">Комлектующие<br> для светотехники</span>
               </a>
             </li>
           </ul>
@@ -173,7 +173,7 @@
           <div class="form__container">
             <h2 class="section-title section-title--white form__title">Остались вопросы? Задайте их нам!</h2>
             <p class="form__intro">Мы проконсультируем Вас бесплатно</p>
-            <form action="/" method="GET">
+            <form action="#" method="GET">
               <label>
                 <input type="text" name="user_name" id="name" placeholder="Имя" required="">
               </label>
@@ -193,8 +193,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo-and-social">
-          <a class="logo page-footer__logo" href="/">
+        <div class="page-footer__logo-and-socials">
+          <a class="logo page-footer__logo" href="#">
             <img class="logo__icon" src="images/logo.svg" width="52" height="52" alt="Логотип с изображением мозга">
             <div class="logo__text-wrapper">
               <span class="logo__text-title logo__text-title--dark">Service Device</span>
@@ -203,14 +203,14 @@
           </a>
           <p class="page-footer__copyright">1999-2018 SD Service Devices</p>
           <ul class="socials" aria-label="Социальные сети">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук"></a>
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="#" aria-label="Фейсбук"></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--ok" href="#" aria-label="Одноклассники"></a>
+            <li class="socials__item">
+              <a class="socials__link socials__link--ok" href="#" aria-label="Одноклассники"></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#" aria-label="Вконтакте"></a>
             </li>
           </ul>
         </div>
@@ -266,7 +266,7 @@
     <div class="popup">
       <div class="popup__overlay">
       </div>
-      <form action="/" method="GET" class="form">
+      <form action="#" method="GET" class="form">
         <h2 class="popup__title">Закажите звонок</h2>
         <p class="popup__intro">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <label>

@@ -142,13 +142,19 @@
   position: absolute;
   top: -192px;
   right: -41px;
+  width: 713px;
+  height: 655px;
 
   @media (max-width: $desktop-width) {
     top: -196px;
     right: 0;
+    width: 330px;
+    height: 466px;
   }
 
   @media (max-width: $tablet-width) {
     top: -287px;
+    width: 294px;
+    height: 437px;
   }
 }

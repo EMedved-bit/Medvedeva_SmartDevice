@@ -1,8 +1,8 @@
-.goods_services {
+.goods-services {
   background-color: $dark-grey;
 }
 
-.goods_services__wrapper {
+.goods-services__wrapper {
   padding: 93px 25px 127px;
   max-width: 1220px;
   display: flex;
@@ -18,7 +18,7 @@
   }
 }
 
-.goods_services__title {
+.goods-services__title {
   margin: 0 0 47px;
 
   @media (max-width: $tablet-width) {
@@ -26,7 +26,7 @@
   }
 }
 
-.goods_services__list {
+.goods-services__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@
   }
 }
 
-.goods_services__item {
+.goods-services__item {
   width: calc((100% - 60px) / 3);
   position: relative;
   cursor: pointer;
@@ -86,7 +86,7 @@
   &:focus {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
-    .goods_services__image {
+    .goods-services__image {
       opacity: 0.5;
     }
   }
@@ -96,13 +96,13 @@
   display: flex;
 }
 
-.goods_services__image {
+.goods-services__image {
   width: 100%;
   height: auto;
   opacity: 0.2;
 }
 
-.goods_services__name {
+.goods-services__name {
   font-family: "Roboto Condensed", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 20px;
