@@ -1,6 +1,6 @@
 .page-footer {
   background-color: $light-grey;
-  padding: 65px 0 14px;
+  padding: 68px 0 14px;
   margin-top: auto;
 
   @media (max-width: $desktop-width) {
@@ -16,6 +16,7 @@
   padding: 0 25px 60px;
   max-width: 1460px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   justify-content: space-between;
 
@@ -58,6 +59,14 @@
   }
 }
 
+.footer-nav {
+  margin-right: 32px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
 .page-footer__section-title {
   margin: 0;
   font-family: "Roboto Condensed", "Helvetica", sans-serif;
@@ -67,7 +76,7 @@
   color: $dark-grey;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 
   @media (max-width: $tablet-width) {
     margin: 0;

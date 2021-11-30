@@ -1,16 +1,16 @@
 .company-description {
-  padding: 110px 25px 96px;
+  padding: 107px 25px 109px 200px;
   max-width: 1220px;
   display: flex;
   margin: 0 auto;
   position: relative;
 
   @media (max-width: $desktop-width) {
-    padding: 54px 25px 75px;
+    padding: 54px 25px 83px 212px;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 60px 15px 65px;
+    padding: 57px 15px 65px;
   }
 }
 
@@ -19,21 +19,39 @@
 }
 
 .company-description__title {
-  margin-bottom: 18px;
-}
-
-.company-description__text {
-  margin: 0 0 30px;
+  margin-bottom: 21px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 22px;
+  }
+}
+
+.company-description__text {
+  margin: 0 0 25px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 24px;
 
     &:last-of-type {
-      margin-bottom: 30px;
+      /* stylelint-disable-next-line */
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      /* stylelint-disable-next-line */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 46px;
+
+    &:last-of-type {
+      margin-bottom: 33px;
+      -webkit-line-clamp: 8;
     }
   }
 }
@@ -54,13 +72,26 @@
     border: 1px solid $dark-grey;
   }
 
+  @media (max-width: $desktop-width) {
+    margin-top: 20px;
+  }
+
   @media (max-width: $tablet-width) {
     margin-top: 0;
   }
 }
 
 .company-description__image {
-  margin-left: -30px;
+  position: absolute;
+  width: 220px;
+  height: auto;
+  left: 0;
+
+  @media (max-width: $desktop-width) {
+    width: 247px;
+    left: -6px;
+    top: 55px;
+  }
 
   @media (max-width: $tablet-width) {
     display: none;

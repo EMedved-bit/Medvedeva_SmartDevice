@@ -9,7 +9,7 @@
     font-family: inherit;
     font-size: 16px;
     cursor: pointer;
-    color: $white;
+    color: $dark-grey;
 
     &::placeholder {
       font-weight: 400;
@@ -29,12 +29,20 @@
     padding: 0 16px;
     width: 100%;
     height: 50px;
+
+    @media (max-width: $desktop-width) {
+      padding: 0 14px;
+    }
   }
 
   textarea {
     width: 100%;
     height: 154px;
     padding: 13px 16px;
+
+    @media (max-width: $desktop-width) {
+      height: 160px;
+    }
 
     @media (max-width: $tablet-width) {
       height: 104px;
@@ -54,7 +62,7 @@
 }
 
 .form__wrapper {
-  padding: 96px 25px 114px;
+  padding: 94px 25px 114px;
   max-width: 1220px;
   display: flex;
   margin: 0 auto;
@@ -66,8 +74,8 @@
     width: 686px;
     height: 641px;
     position: absolute;
-    top: -60px;
-    left: -210px;
+    top: -59px;
+    left: -177px;
   }
 
   &::after {
@@ -81,7 +89,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding: 83px 25px 103px;
+    padding: 79px 25px 104px;
 
     &::before,
     &::after {
@@ -90,12 +98,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 33px 15px 41px;
+    padding: 32px 15px 41px;
   }
 }
 
 .form__container {
-  width: 50%;
+  width: 49%;
   margin-left: auto;
 
   @media (max-width: $desktop-width) {
@@ -117,8 +125,9 @@
     align-items: center;
 
     @media (max-width: $tablet-width) {
-      padding-top: 30px;
+      padding-top: 26px;
       grid-template-columns: 1fr;
+      row-gap: 33px;
     }
   }
 
@@ -128,21 +137,53 @@
 
   button {
     grid-column: 1/0;
+
+    @media (max-width: $desktop-width) {
+      margin-top: 7px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin: -3px;
+    }
   }
 }
 
 .form__title {
   margin-bottom: 10px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .form__intro {
   margin: 0;
   color: $white;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__checkbox-wrapper {
   grid-column: 0/-1;
   display: flex;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 12px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 1px;
+  }
 
 
   label {

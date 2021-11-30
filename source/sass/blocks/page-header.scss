@@ -10,7 +10,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 17px;
+    padding-top: 9px;
   }
 }
 
@@ -41,6 +41,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -120,8 +121,8 @@
 }
 
 .page-header__button {
-  padding: 0 26px;
-  margin-left: 50px;
+  padding: 0 33px;
+  margin-left: 49px;
 
   &:hover,
   &:focus {
