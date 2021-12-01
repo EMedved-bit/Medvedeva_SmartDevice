@@ -12,7 +12,9 @@
   }
 
   form.form {
+    overflow: auto;
     padding: 33px 39px 36px;
+    max-height: 100%;
     width: 490px;
     background-color: $blue;
     position: absolute;
@@ -30,19 +32,22 @@
     }
   }
 
-  input {
+  input:not([class="visually-hidden"]) {
     padding: 0 24px;
     margin-bottom: 30px;
+    flex-shrink: 0;
   }
 
   textarea {
     padding: 13px 24px;
     height: 104px;
     margin-bottom: 30px;
+    flex-shrink: 0;
   }
 
   button[type="submit"] {
     margin-bottom: 34px;
+    flex-shrink: 0;
   }
 }
 

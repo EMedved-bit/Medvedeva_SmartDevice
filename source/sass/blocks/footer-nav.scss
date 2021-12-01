@@ -12,7 +12,7 @@
 .footer-nav__list-wrapper {
   display: flex;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $desktop-l-width) {
     flex-direction: column;
   }
 
@@ -28,6 +28,10 @@
 
   &:not(:last-child) {
     margin-right: 65px;
+
+    @media (max-width: $desktop-l-width) {
+      margin-right: 0;
+    }
   }
 
   @media (max-width: $desktop-width) {

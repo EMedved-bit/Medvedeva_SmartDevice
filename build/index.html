@@ -14,12 +14,12 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="logo page-header__logo" href="#">
-          <img class="logo__icon" src="images/logo.svg" width="52" height="52" alt="Логотип с изображением мозга">
-          <div class="logo__text-wrapper">
-            <span class="logo__text-title">Smart Device</span>
-            <span class="logo__text-subtitle">умные технологии</span>
-          </div>
+        <a class="logo page-header__logo">
+          <picture>
+            <!-- 52x52px -->
+            <source media="(max-width: 767px)" srcset="images/logo.svg">
+            <img class="logo__icon" src="images/logo-big.svg" width="202" height="52" alt="Логотип с изображением мозга">
+          </picture>
         </a>
         <ul class="page-header__contacts-list">
           <li class="page-header__contacts-item">
@@ -102,14 +102,14 @@
           </p>
           <a class="button button--blue-text company-description__link" href="#">Подробнее</a>
         </div>
-        <img class="company-description__image" src="../images/2005.png" width="220" height="320" alt="2005">
+        <img class="company-description__image" src="images/2005.png" width="220" height="320" alt="2005">
       </section>
       <section class="goods-services">
         <div class="goods-services__wrapper">
           <h2 class="section-title section-title--white goods-services__title">Service Device предлагает следующие товары и услуги</h2>
           <ul class="goods-services__list">
             <li class="goods-services__item">
-              <a class="goods-services__link">
+              <a class="goods-services__link" href="#">
                 <picture class="goods-services__picture">
                   <!-- 1x: 290x256px; 2x: 580x512px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="images/gallery/goods_1mobile@1x.webp 1x, images/gallery/goods_1mobile@2x.webp 2x">
@@ -128,7 +128,7 @@
               </a>
             </li>
             <li class="goods-services__item">
-              <a class="goods-services__link">
+              <a class="goods-services__link" href="#">
                 <picture class="goods-services__picture">
                   <!-- 1x: 290x256px; 2x: 580x512px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="images/gallery/goods_2mobile@1x.webp 1x, images/gallery/goods_2mobile@2x.webp 2x">
@@ -147,7 +147,7 @@
               </a>
             </li>
             <li class="goods-services__item">
-              <a class="goods-services__link">
+              <a class="goods-services__link" href="#">
                 <picture class="goods-services__picture">
                   <!-- 1x: 290x256px; 2x: 580x512px -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="images/gallery/goods_3mobile@1x.webp 1x, images/gallery/goods_3mobile@2x.webp 2x">
@@ -248,9 +248,9 @@
           <h3 class="page-footer__section-title js-tab-button">Наш офис</h3>
           <div class="page-footer__text-wrapper js-tab-content">
             <p class="page-footer__text">г. Мытищи, Олимпийский проспект,&nbsp;д.10</p>
-            <p class="page-footer__text">+7 (495) 589-40-50</p>
-            <p class="page-footer__text">+7 (925) 003-87-67</p>
-            <p class="page-footer__text">+7 (926) 926-080-79</p>
+            <p class="page-footer__text"><a href="tel:+74955894050">+7 (495) 589-40-50</a></p>
+            <p class="page-footer__text"><a href="tel:+792500387672">+7 (925) 003-87-67</a></p>
+            <p class="page-footer__text"><a href="tel:+792692608079">+7 (926) 926-080-79</a></p>
           </div>
         </div>
       </div>

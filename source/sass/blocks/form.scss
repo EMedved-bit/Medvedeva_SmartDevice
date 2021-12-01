@@ -10,6 +10,7 @@
     font-size: 16px;
     cursor: pointer;
     color: $dark-grey;
+    border-radius: 0;
 
     &::placeholder {
       font-weight: 400;
@@ -25,7 +26,7 @@
     }
   }
 
-  input {
+  input:not([class="visually-hidden"]) {
     padding: 0 16px;
     width: 100%;
     height: 50px;
@@ -39,6 +40,7 @@
     width: 100%;
     height: 154px;
     padding: 13px 16px;
+    resize: none;
 
     @media (max-width: $desktop-width) {
       height: 160px;

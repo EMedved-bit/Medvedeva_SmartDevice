@@ -109,11 +109,16 @@
   color: $white;
   display: flex;
   align-items: center;
+  text-align: center;
 
   &:hover,
   &:active,
   &:focus {
     background-color: $grey;
+  }
+
+  @media (max-width: $desktop-l-width) {
+    padding: 0 15px;
   }
 
   @media (max-width: $desktop-width) {

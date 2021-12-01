@@ -90,6 +90,18 @@
   font-size: 15px;
   line-height: 25px;
   color: rgba($dark-grey, 0.5);
+
+  a {
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $dark-grey;
+    }
+  }
 }
 
 
@@ -104,9 +116,13 @@
 
   @media (max-width: $desktop-width) {
     display: block;
+    margin-top: 4px;
+    margin-left: 14px;
   }
 
   @media (max-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: 0;
     margin-bottom: 31px;
   }
 }
@@ -117,7 +133,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding: 38px 25px 0 0;
+    padding: 38px 36px 0 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -129,7 +145,7 @@
 
 .page-footer__text-wrapper {
   @media (max-width: $tablet-width) {
-    padding-bottom: 23px;
+    padding-bottom: 29px;
   }
 }
 
@@ -147,15 +163,15 @@
       content: "";
       width: 16px;
       height: 1px;
-      top: 38px;
-      right: 23px;
+      top: 37px;
+      right: 2px;
     }
 
     &::after {
       width: 1px;
       height: 16px;
       top: 30px;
-      right: 30px;
+      right: 9px;
     }
 
     &:hover,
